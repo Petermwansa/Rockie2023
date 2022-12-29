@@ -57,3 +57,40 @@ window.addEventListener('scroll', () =>{
         content.classList.remove('active-clients');
     }
 });
+
+
+window.addEventListener('scroll', () =>{
+    let content = document.querySelector('.countdown3');
+    let contentPosition = content.getBoundingClientRect().top;
+    let screenPosition = window.innerHeight;
+
+    if(contentPosition < screenPosition) {
+        content.classList.add('active-countdown3');
+    } else {
+        content.classList.remove('active-countdown3');
+    }
+});
+
+window.addEventListener('scroll', () =>{
+    let content = document.querySelector('.countdown2');
+    let contentPosition = content.getBoundingClientRect().top;
+    let screenPosition = window.innerHeight;
+
+    if(contentPosition < screenPosition) {
+        content.classList.add('active-countdown2');
+    } else {
+        content.classList.remove('active-countdown2');
+    }
+});
+
+window.addEventListener('scroll', () =>{
+    let content = document.querySelector('.countdown1');
+    let contentPosition = content.getBoundingClientRect().top;
+    let screenPosition = window.innerHeight;
+
+    if(contentPosition < screenPosition) {
+        content.classList.add('active-countdown1');
+    } else {
+        content.classList.remove('active-countdown1');
+    }
+});
